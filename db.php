@@ -32,7 +32,7 @@ try {
     $Languages = $_POST['lange'];
     foreach ($Languages as $language) {
         $kl = implode($Languages);
-        $stmt->bindParam(':language', $kl);
+        $stmt->bindParam(':language', ',', $kl, ',');
         $stmt->execute();
     }
 } catch (PDOException $e) {
