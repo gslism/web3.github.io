@@ -27,7 +27,7 @@ try {
     $stmt->bindParam(':contract_agreed', $checkt);
     $stmt->execute();
     $user_id = $db->lastInsertId();
-    $stmt = $db->prepare("INSERT INTO USER_languages (user_id, language) VALUES (:user_id,:language)");
+    $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
     $stmt->bindParam(':user_id', $user_id);
     $Languages = $_POST['lange'];
     foreach ($Languages as $language) {
