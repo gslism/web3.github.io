@@ -26,11 +26,6 @@ try {
     $stmt->bindParam(':bio', $bio);
     $stmt->bindParam(':contract_agreed', $checkt);
     $stmt->execute();
-} catch (PDOException $e) {
-    print ('Error : ' . $e->getMessage());
-    exit();
-}
-try {
     $stmt = $db->prepare("INSERT INTO language (lange_name) VALUES (:lange_name)");
     $lange = json_encode($_POST['lange']);
     $stmt->execute();
@@ -38,5 +33,13 @@ try {
     print ('Error : ' . $e->getMessage());
     exit();
 }
+// try {
+//     $stmt = $db->prepare("INSERT INTO language (lange_name) VALUES (:lange_name)");
+//     $lange = json_encode($_POST['lange']);
+//     $stmt->execute();
+// } catch (PDOException $e) {
+//     print ('Error : ' . $e->getMessage());
+//     exit();
+// }
 
 ?>
