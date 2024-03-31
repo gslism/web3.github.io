@@ -26,24 +26,17 @@ try {
     $stmt->bindParam(':bio', $bio);
     $stmt->bindParam(':contract_agreed', $checkt);
     $stmt->execute();
-    // $user_id = $db->lastInsertId();
-    // $stmt = $db->prepare("INSERT INTO user_languages (user_id, language) VALUES (:user_id,:language)");
-    // $stmt->bindParam(':user_id', $user_id);
-    // $Languages = $_POST['lange'];
-    // foreach ($Languages as $language) {
-    //     $kl = implode($Languages);
-    //     $stmt->bindParam(':language', $kl);
-    //     $stmt->execute();
-    // }
 } catch (PDOException $e) {
     print ('Error : ' . $e->getMessage());
     exit();
 }
-
-// $Languages = $_POST['lange'];
-// foreach ($Languages as $lange) {
-//     $stmt = $db->prepare("INSERT INTO programming_languages (lang_id, lang_name) VALUES (:lang_id, :lang_name)");
-//     $stmt->bindParam(':lang_name', $kl);
-// }
+try {
+    $stmt = $db->prepare("INSERT INTO language (lange_name) VALUES (:lange_name)");
+    $lange = json_encode($_POST['lange']);
+    $stmt->execute();
+} catch (PDOException $e) {
+    print ('Error : ' . $e->getMessage());
+    exit();
+}
 
 ?>
