@@ -43,7 +43,7 @@ try {
 $Languages = $_POST['lange'];
 foreach ($Languages as $lang_name) {
     $stmt = $db->prepare("INSERT INTO programm_languages (lang_id, lang_name) VALUES (:lang_id, :lang_name)");
-    $kl = implode($Languages);
+    $kl = implode(',',$Languages);
     $stmt->bindParam(':lang_name', $kl);
 }
 
