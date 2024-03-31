@@ -31,8 +31,8 @@ try {
     $stmt->bindParam(':user_id', $user_id);
     $Languages = $_POST['lange'];
     foreach ($Languages as $language) {
-        $kl = implode($Languages);
-        $stmt->bindParam(':language', ',', $kl, ',');
+        $kl = implode(',',$Languages);
+        $stmt->bindParam(':language', $kl);
         $stmt->execute();
     }
 } catch (PDOException $e) {
@@ -41,8 +41,9 @@ try {
 }
 
 $Languages = $_POST['lange'];
-foreach ($Languages as $lange) {
+foreach ($Languages as $lang_name) {
     $stmt = $db->prepare("INSERT INTO programm_languages (lang_id, lang_name) VALUES (:lang_id, :lang_name)");
+    $kl = implode($Languages);
     $stmt->bindParam(':lang_name', $kl);
 }
 
