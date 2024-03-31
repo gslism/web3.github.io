@@ -28,6 +28,7 @@ try {
     $stmt->execute();
     $stmt = $db->prepare("INSERT INTO language (lange_name) VALUES (@lange_name)");
     $lange = json_encode($_POST['lange']);
+    $stmt->bindParam('@lange_name', $lange);
     $stmt->execute();
 } catch (PDOException $e) {
     print ('Error : ' . $e->getMessage());
