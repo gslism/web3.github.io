@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie3</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="my.js"></script>
+    <script src="main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material-custom.min.css"/>
@@ -100,6 +100,23 @@
               </form>
               
         </div>
+    </div>
+    <div class="screen">
+    <ul class="list-unstyled-sm">
+            <h1 id="links" class="text-center"><strong><em>Скриншоты выполнения 3 задания по дисциплине "WEB-backend"</em></strong></h1>
+            <li>Подлкючение к базе данных</li>
+            <img src="Подключение к базе MariaDB.PNG" alt="sign" style="width: 680px;height: 320px;">
+            <li>Создание таблицы в базе данных</li>
+            <img src="Создание базы данных.PNG" alt="sign" style="width: 580px;height: 570px;">
+            <li>Вид таблицы после создания можно посмотреть при помощи desc название таблицы</li>
+            <img src=" bd.PNG" alt="sign" style="width: 670px;height: 530px;">
+            <li>Далее переходим на учебный сервер и заполняем таблицу по адресу .././index.php</li>
+            <img src="zapolnenie.PNG" alt="sign" style="width: 680px;height: 570px;">
+            <li>После сохранения данных они переносятся на register.php, а далее обрабатываются в db.php</li>
+            <img src="save in register.PNG" alt="sign" style="width: 860px;height: 90px;">
+            <li>Сохраненные данные после заполнения формы</li>
+            <img src="save.PNG" alt="sign" style="width:870px;height: 320px;">
+        </ul>
     </div>
 </body>
 </html>
