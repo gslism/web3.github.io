@@ -34,6 +34,7 @@ try {
         // $kl = implode(',',$Languages);
         // $stmt->bindParam(':language', $kl);
         // $stmt->execute();
+        $stmt = $db->prepare("INSERT INTO USER_language (language) VALUES (:language) ");
         $stmt->execute([':language' => $language]);
     }
     // $Languages =  $_POST['lange'];
