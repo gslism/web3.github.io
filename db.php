@@ -37,7 +37,9 @@ try {
     // }
     $Languages =  $_POST['lange'];
     foreach ($Languages as $language) {
-        $stmt = $db->prepare("INSERT INTO USER_language (language) VALUES (:language) ");
+        // $stmt = $db->prepare("INSERT INTO USER_language (language) VALUES (:language) ");
+        $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
+        $stmt->bindParam(':user_id', $user_id);
         $stmt->execute([':language' => $language]);
     }
 } catch (PDOException $e) {
