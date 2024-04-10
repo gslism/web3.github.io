@@ -31,7 +31,7 @@ try {
     $stmt->bindParam(':user_id', $user_id);
     $Languages = $_POST['lange'];
     foreach ($Languages as $language) {
-        $kl = implode(',',$Languages);
+        $kl = ($Languages);
         $stmt->bindParam(':language', $kl);
         $stmt->execute();
     }
