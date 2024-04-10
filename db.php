@@ -26,9 +26,9 @@ try {
     $stmt->bindParam(':bio', $bio);
     $stmt->bindParam(':contract_agreed', $checkt);
     $stmt->execute();
-   
-    // $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
-    // $stmt->bindParam(':user_id', $user_id);
+    $user_id = $db->lastInsertId();
+    $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
+    $stmt->bindParam(':user_id', $user_id);
     // $Languages =  $_POST['lange'];
     // foreach ($Languages as $language) {
     //     $kl = implode(',',$Languages);
@@ -38,10 +38,8 @@ try {
     $Languages =  $_POST['lange'];
     foreach ($Languages as $language) {
         // $stmt = $db->prepare("INSERT INTO USER_language (language) VALUES (:language) ");
-        $user_id = $db->lastInsertId();
-        $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
-        $stmt->bindParam(':user_id', $user_id);
         $stmt->execute([':language' => $language]);
+        $stmt->execute();
     }
 } catch (PDOException $e) {
     print ('Error : ' . $e->getMessage());
