@@ -29,14 +29,12 @@ try {
     $user_id = $db->lastInsertId();
     $stmt = $db->prepare("INSERT INTO USER_language (user_id, language) VALUES (:user_id,:language)");
     $stmt->bindParam(':user_id', $user_id);
-    $Languages = json_encode($_POST['lange']);
-    $stmt->bindParam(':language', $languages);
-    // $Languages = json_encode($_POST['lange']);
-    // foreach ($Languages as $language) {
-    //     $kl = json_encode($Languages);
-    //     $stmt->bindParam(':language', $kl);
-    //     $stmt->execute();
-    // }
+    $Languages = $_POST['lange'];
+    foreach ($Languages as $language) {
+        $kl = ($Languages);
+        $stmt->bindParam(':language', $kl);
+        $stmt->execute();
+    }
 } catch (PDOException $e) {
     print ('Error : ' . $e->getMessage());
     exit();
