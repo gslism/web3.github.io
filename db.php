@@ -31,7 +31,7 @@ try {
     $stmt->bindParam(':user_id', $user_id);
     $Languages = $_POST['lange'];
     foreach ($Languages as $language) {
-        $kl = ($Languages);
+        $kl = json_encode($_POST['lange']);
         $stmt->bindParam(':language', $kl);
         $stmt->execute();
     }
