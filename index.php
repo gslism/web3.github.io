@@ -21,7 +21,7 @@
                 <div class="col-auto">
                   <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
                   <input type="text" placeholder="fio" name="login" class="form-control rounded-pill" id="validationCustom01" value=""  />
-                  <span class="error">* <?php echo $Login_Error;?></span>
+                  
                 </div>
           
                 <div class="col-auto">
