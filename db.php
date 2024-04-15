@@ -29,7 +29,7 @@ try {
     $user_id = $db->lastInsertId();
     $Languages =  $_POST['lange'];   
     foreach ($Languages as $language_name) {
-        $stmt = $db->prepare("INSERT INTO user_language (user_id, language_name) VALUES (:user_id,:language_name)");
+        $stmt = $db->prepare("INSERT INTO user_languages (user_id, language_name) VALUES (:user_id,:language_name)");
          $stmt->bindParam(':user_id', $user_id);
          $stmt->execute([':language_name', $language_name]);
          $stmt->execute();
