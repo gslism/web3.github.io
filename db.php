@@ -120,12 +120,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       $flag = 1;
   }
   if ($flag == 0){
-      Header("Location:". $_SERVER['HTTP_REFERER']."?mes=success");
+    header('Location: ?save=1');
+
   }
 }
-if ($_GET['mes'] == 'success'){
-  $err['success'] = '<div class="alert alert-success">Сообщение успешно отправлено!</div>';
-}
+// if ($_GET['mes'] == 'success'){
+//   $err['success'] = '<div class="alert alert-success">Сообщение успешно отправлено!</div>';
+// }
 
 
 
