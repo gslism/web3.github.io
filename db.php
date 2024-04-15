@@ -18,8 +18,8 @@ try {
     if (!preg_match('/^[А-ЯЁёа-я\s]+$/u', $login)) {
         echo " <p style='color: pink;'>Ошибка: поле должно содержать только русские буквы</p>";
         $login = '';
-    } elseif (substr($tel, 0, 2) !== '8') {
-        echo " <p style='color: red;'>Ошибка: номер телефона должен начинаться с 8</p>";
+    } elseif (substr($tel, 0, 2) !== '+7') {
+        echo " <p style='color: red;'>Ошибка: номер телефона должен начинаться с +7</p>";
         $tel = '';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "<p style='color: red;'>Ошибка: неправильный формат email</p>";
