@@ -10,13 +10,15 @@ $db = new PDO(
 );
 
 try {
+  $Login_Error = $Email_Error = $Tel_Error = $Date_Error = "";
+  $login = $email = $tel  = $date = "";
     $login = $_POST['login'];
     $tel = $_POST['tel'];
     $email = $_POST['email'];
     $date = $_POST['date'];
     $date = date_diff(date_create($date), date_create('today'))->y;
     if (!preg_match('/^[А-ЯЁёа-я\s]+$/u', $login)) {
-        echo " <p style='color: red;'>Ошибка: поле должно содержать только русские буквы</p>";
+        $Login_Error= " <p style='color: red;'>Ошибка: поле должно содержать только русские буквы</p>";
         $login = '';
     } elseif (substr($tel, 0, 2) !== '+7') {
         echo " <p style='color: red;'>Ошибка: номер телефона должен начинаться с +7</p>";
