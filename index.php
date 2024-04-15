@@ -43,11 +43,11 @@
                 </div>
           
                 <div class="col-auto">
-                  <label>Дата рождения:<br />
-                    <input class="form-control rounded-pill" placeholder="date" name="date" type="date" required="" />
-                  </label>
-                  
-                  
+                    <label>
+                        Дата рождения:<br />
+                        <input class="form-control rounded-pill" placeholder="2004-09-24" type="date" name="date"
+                            required="" />
+                    </label>
                 </div>
           
                 <div class="col-auto">
@@ -64,22 +64,24 @@
                 </div>
           
                 <div class="col-auto">
-                  <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
-                  <select class="form-select rounded-pill" id="validationCustom04" required=""  multiple="multiple" name="language[]">
-                    <option selected="" disabled="" value="">Выберете</option>
-                    <option value="Pascal">Pascal</option>
-                    <option value="C">C</option>
-                    <option value="C++">C++</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                    <option value="Haskel">Haskel</option>
-                    <option value="Clojure">Clojure</option>
-                    <option value="Prolog">Prolog</option>
-                    <option value="Scala">Scala</option>
-                  </select>
-                  <div class="invalid-feedback"></div>
+                    <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
+                    <select class="form-select rounded-pill" id="validationCustom04" required="" multiple
+                        name="language[]">
+                        <option selected="" disabled="" value="">Выберете</option>
+                        <option value="1">Pascal</option>
+                        <option value=" 2">C</option>
+                        <option value=" 3">C++</option>
+                        <option value=" 4">JavaScript</option>
+                        <option value=" 5">PHP</option>
+                        <option value=" 6">Python</option>
+                        <option value=" 7"> Java</option>
+                        <option value=" 8">Haskel</option>
+                        <option value=" 9">Clojure</option>
+                        <option value=" 10">Prolog</option>
+                        <option value=" 11">Scala</option>
+                    </select>
+                    <div class=" invalid-feedback">
+                    </div>
                 </div>
           
                 <div class="col-auto">
