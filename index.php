@@ -21,7 +21,7 @@
                 <div class="col-auto">
                   <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
                   <input type="text" placeholder="fio" name="login" class="form-control rounded-pill" id="validationCustom01" value="" required=""/>
-                  <div class="valid-feedback">Отлично!</div>
+                  
                 </div>
           
                 <div class="col-auto">
@@ -29,6 +29,7 @@
                   <div class="input-group has-validation">
                     <input type="text" class="form-control rounded-pill" placeholder="tel" name="tel" id="validationCustomTelefone" aria-describedby="inputGroupPrepend" required=""/>
                     <div class="invalid-feedback"></div>
+                    
                   </div>
                 </div>
           
@@ -37,6 +38,7 @@
                   <div class="input-group has-validation">
                     <input type="text" class="form-control rounded-pill" placeholder="email" name="email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
                     <div class="invalid-feedback"></div>
+                    
                   </div>
                 </div>
           
@@ -44,6 +46,8 @@
                   <label>Дата рождения:<br />
                     <input class="form-control rounded-pill" placeholder="date" name="date" type="date" required=""/>
                   </label>
+                  
+                  
                 </div>
           
                 <div class="col-auto">
@@ -55,6 +59,7 @@
                   <div class="form-check icheck-material-orange">
                     <input class="form-check-input" type="radio" id="someRadioId2" value="men" name="someGroupName"/>
                     <label class="form-check-label"  for="someRadioId2">Мужской</label>
+                    
                   </div>
                 </div>
           
@@ -81,6 +86,7 @@
                   <label>Биография:<br />
                     <textarea class="form-control rounded-pill" placeholder="bio" name="bio" required=""></textarea>
                   </label>
+                  
                 </div>
           
                 <div class="col-auto">С контрактом:
@@ -90,6 +96,7 @@
                       Ознакомлен (а)
                     </label>
                     <div class="invalid-feedback"></div>
+                    
                   </div>
                 </div>
           
