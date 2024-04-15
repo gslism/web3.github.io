@@ -48,11 +48,7 @@ function clear_data($val){
   $val = htmlspecialchars($val);
   return $val;
 }
-echo $err['login'];
-echo $err['tel'];
-echo $err['email'];
-echo $err['date'];
-echo $err['bio'];
+
 $login = clear_data($_POST['login']);
 $tel = clear_data($_POST['tel']);
 $email = clear_data($_POST['email']);
@@ -66,7 +62,11 @@ $pattern_tel = '/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9
 $pattern_login = '/^[А-ЯЁ][а-яё]*$/';
 $err = [];
 $flag = 0;
-
+// echo $err['login'];
+// echo $err['tel'];
+// echo $err['email'];
+// echo $err['date'];
+// echo $err['bio'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   if (preg_match($pattern_login, $login)){
       $err['login'] = '<small class="text-danger">Введите корректное имя</small>';
