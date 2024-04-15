@@ -48,7 +48,11 @@ function clear_data($val){
   $val = htmlspecialchars($val);
   return $val;
 }
-
+echo $err['login'];
+echo $err['tel'];
+echo $err['email'];
+echo $err['date'];
+echo $err['bio'];
 $login = clear_data($_POST['login']);
 $tel = clear_data($_POST['tel']);
 $email = clear_data($_POST['email']);

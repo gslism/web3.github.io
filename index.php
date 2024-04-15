@@ -20,14 +20,14 @@
                 
                 <div class="col-auto">
                   <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
-                  <input type="text" placeholder="fio" name="login" class="form-control rounded-pill" id="validationCustom01" value="" required=""/>
+                  <input type="text" placeholder="fio" name="login" class="form-control rounded-pill" id="validationCustom01" value=""  />
                   
                 </div>
           
                 <div class="col-auto">
                   <label for="validationCustomTelefone" class="form-label">Телефон:</label>
                   <div class="input-group has-validation">
-                    <input type="text" class="form-control rounded-pill" placeholder="tel" name="tel" id="validationCustomTelefone" aria-describedby="inputGroupPrepend" required=""/>
+                    <input type="text" class="form-control rounded-pill" placeholder="tel" name="tel" id="validationCustomTelefone" aria-describedby="inputGroupPrepend"  />
                     <div class="invalid-feedback"></div>
                     
                   </div>
@@ -36,7 +36,7 @@
                 <div class="col-auto">
                   <label for="validationCustomUsername" class="form-label">E-mail:</label>
                   <div class="input-group has-validation">
-                    <input type="text" class="form-control rounded-pill" placeholder="email" name="email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+                    <input type="text" class="form-control rounded-pill" placeholder="email" name="email" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  />
                     <div class="invalid-feedback"></div>
                     
                   </div>
@@ -44,7 +44,7 @@
           
                 <div class="col-auto">
                   <label>Дата рождения:<br />
-                    <input class="form-control rounded-pill" placeholder="date" name="date" type="date" required=""/>
+                    <input class="form-control rounded-pill" placeholder="date" name="date" type="date"  />
                   </label>
                   
                   
@@ -53,7 +53,7 @@
                 <div class="col-auto">
                   <p>Выберите ваш пол:<br /></p>
                   <div class="form-check icheck-material-orange">
-                    <input class="form-check-input" type="radio" id="someRadioId1" value="women" name="someGroupName" required=""/>
+                    <input class="form-check-input" type="radio" id="someRadioId1" value="women" name="someGroupName"  />
                     <label class="form-check-label"  for="someRadioId1">Женский</label>
                   </div>
                   <div class="form-check icheck-material-orange">
@@ -65,7 +65,7 @@
           
                 <div class="col-auto">
                   <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
-                  <select class="form-select rounded-pill" id="validationCustom04" required="" multiple="multiple" name="lange[]">
+                  <select class="form-select rounded-pill" id="validationCustom04"   multiple="multiple" name="lange[]">
                     <option selected="" disabled="" value="">Выберете</option>
                     <option value="Pascal">Pascal</option>
                     <option value="C">C</option>
@@ -84,19 +84,19 @@
           
                 <div class="col-auto">
                   <label>Биография:<br />
-                    <textarea class="form-control rounded-pill" placeholder="bio" name="bio" required=""></textarea>
+                    <textarea class="form-control rounded-pill" placeholder="bio" name="bio"  ></textarea>
                   </label>
                   
                 </div>
           
                 <div class="col-auto">С контрактом:
                   <div class="form-check icheck-material-orange">
-                    <input class="form-check-input" type="checkbox" placeholder="check" name="checkt" value="Ознакомлен (а)" id="invalidCheck" required=""/>
+                    <input class="form-check-input" type="checkbox" placeholder="check" name="checkt" value="Ознакомлен (а)" id="invalidCheck"  />
                     <label class="form-check-label" for="invalidCheck">
                       Ознакомлен (а)
                     </label>
                     <div class="invalid-feedback"></div>
-                    
+                    <!-- //required="" -->
                   </div>
                 </div>
           
