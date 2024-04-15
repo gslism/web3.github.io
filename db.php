@@ -53,7 +53,7 @@ try {
             $stmt->bindParam(':language_name', $language_name);
             $stmt->execute();
         }
-        echo "<h5 style='color: green;'>Форма успешно сохранена</h5>";
+        echo "<h5 style='color: Blue;'>Форма сохранена</h5>";
     }
 } catch (PDOException $e) {
     print ('Error : ' . $e->getMessage());

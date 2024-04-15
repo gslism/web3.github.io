@@ -9,15 +9,28 @@ CREATE TABLE users (
     contract_agreed VARCHAR(100)
 );
 
-CREATE TABLE USER_language (
-    user_language_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    language VARCHAR(50),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+CREATE TABLE user_languages (
+  languages_id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  language_name INT,
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
-
-CREATE TABLE programm_languages (
-   language_id INT AUTO_INCREMENT PRIMARY KEY,
-    language_name VARCHAR(50)
+CREATE TABLE programming_languages (
+    language_id INT AUTO_INCREMENT PRIMARY KEY,
+    language_values INT,
+    language_names text
 );
+
+INSERT INTO programming_languages (language_values, language_names) VALUES (1, 'Pascal');
+INSERT INTO programming_languages (language_values, language_names) VALUES (2, 'C');
+INSERT INTO programming_languages (language_values, language_names) VALUES (3, 'C++');
+INSERT INTO programming_languages (language_values, language_names) VALUES (4, 'JavaScript');
+INSERT INTO programming_languages (language_values, language_names) VALUES (5, 'PHP');
+INSERT INTO programming_languages (language_values, language_names) VALUES (6, 'Python');
+INSERT INTO programming_languages (language_values, language_names) VALUES (7, 'Java');
+INSERT INTO programming_languages (language_values, language_names) VALUES (8, 'Haskell');
+INSERT INTO programming_languages (language_values, language_names) VALUES (9, 'Clojure');
+INSERT INTO programming_languages (language_values, language_names) VALUES (10, 'Prolog');
+INSERT INTO programming_languages (language_values, language_names) VALUES (11, 'Scala');
+
