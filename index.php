@@ -118,7 +118,7 @@
             <li>Создание таблицы в базе данных</li>
             <img src="Создание базы данных.PNG" alt="sign" style="width: 580px;height: 570px;">
             <li>Заполнение таблицы списком языков</li>
-            <img src="zapolnenieprl.PNG" alt="sign" style="width: 860px;height: 90px;">
+            <img src="zapolnenieprl.PNG" alt="sign" style="width: 620px;height: 370px;">
             <li>Вид таблицы после создания можно посмотреть при помощи desc название таблицы</li>
             <img src=" bd.PNG" alt="sign" style="width: 670px;height: 530px;">
             <li>Далее переходим на учебный сервер и заполняем таблицу по адресу .././index.php</li>
