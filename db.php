@@ -17,7 +17,7 @@ try {
     
     $date = $_POST['date'];
     $date = date_diff(date_create($date), date_create('today'))->y;
-    if (!preg_match('/^[А-ЯЁ][а-яё]*$/u', $login)) {
+    if (!preg_match('/^[А-ЯЁёа-я\s]+$/u', $login)) {
       echo " <p style='color: red;'>Ошибка: поле должно содержать только русские буквы</p>";
       $login = '';
   } elseif (substr($tel, 0, 2) !== '+7') {
